@@ -1,0 +1,197 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.main-area{
+	height: 100vh;
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.taskbar{
+	height: 6vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: #CECECE;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	grid-gap: 20px;
+	padding: 0 15px;
+}
+.taskbar__icons{
+	font-size: 20px;
+}
+.terminal{
+	/* height: 70vh; */
+	background-color: #333333;
+	max-width: 700px;
+	width: 100%;
+	border-radius: 2px;
+	position: absolute;
+	/* display: none; */
+}
+
+.terminal-header{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	max-height: 28px;
+    height: 100%;
+}
+.terminal-header-name{
+	padding: 5px;
+	background-color: #0C0C0C;
+	border-radius: 3px 3px 0 0 ;
+	margin-left: 10px;
+	margin-top: 5px;
+	color: #CECECE;
+	font-size: 12px;
+	max-width: 150px;
+	width: 100%;
+	font-family: monospace;
+
+}
+.terminal-header-actions{
+	color: white;
+	display: flex;
+	height: 100%;
+}
+.terminal-header-each-action{
+	padding: 0 15px;
+    font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 28px;
+	cursor: pointer;
+}
+
+.minimize:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+}	
+.close:hover{
+	background-color: rgba(220, 41, 41, 0.5);
+}	
+.terminal-body{
+	background-color: #0C0C0C;
+	margin: 0 3px 3px 3px;
+	/* overflow-y: scroll; */
+	border-radius: 2px;
+	height: 55vh;
+	padding: 10px;
+}
+.terminal-body__copyrights{
+	color: #CECECE;
+	font-size: 12px;
+	font-family: monospace;
+}
+.terminal-body__profile_question{
+	color: #CECECE;
+	font-size: 12px;
+	font-family: monospace;
+}
+.terminal-body__profile_answer{
+	color: #CECECE;
+	font-size: 12px;
+	font-family: monospace;
+}
+.terminal-body__myname{
+	/* font-family: 'press', sans-serif; */
+	font-family: 'Press Start 2P', cursive;
+	font-size: 36px;
+}
+.tick{
+	font-family: monospace;
+	color: #479A48;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+.compile_msg{
+	color: #585C5D;
+}
+.green{
+	font-family: monospace;
+	color: #479A48;
+	font-weight: bold;
+}
+
+.active-icons{
+	height: 3px;
+	width: 8px;
+	background-color: #59648E;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.search{
+	background-color: rgba(0, 0, 0, 0.5);
+	max-width: 550px;
+	width: 100%;
+	border-radius: 2px;
+	height: 45vh;
+	padding: 30px;
+}
+.searchbar input{
+	width: 100%;
+	font-family: monospace;
+	background-color: #2C2C2C;
+	outline: none;
+	border: 0;
+	border-bottom: 2px solid #908F8C;
+	border-radius: 3px;
+	/* margin: 10px; */
+	padding: 5px;
+	font-size: 12px;
+	color: #CECECE;
+}
+
+.searchlist{
+	display: flex;
+	grid-gap: 25px;
+	margin-top: 25px;
+}
+
+.searchlist img{
+	max-height: 40px;
+	max-width: 40px;
+}
+
+.searchlist__icons{
+	color: #CECECE;
+	font-size: 25px;
+}
+
+.taskbar_time_and_date{
+	font-family: monospace;
+	font-size: 12px;
+}
+.taskbar_time_and_date p {
+	margin: 0;
+}
+#today_time{
+	color: #CECECE;
+}
+
+
+#taskbar-icon__terminal{
+	padding-left: 4px;
+	padding-right: 4px;
+	height: 6vh;
+}
+#taskbar-icon__terminal:hover{
+	background-color: #cecece30;
+}
+#taskbar-icon__terminal.active{
+	border-bottom: 2px solid #929AB3;
+	background-color: #cecece30;
+}
